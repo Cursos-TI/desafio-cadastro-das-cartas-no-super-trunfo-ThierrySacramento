@@ -1,22 +1,44 @@
 #include <stdio.h>
+int main (){
+    int populacao1;
+    float area1, pib1;
+    int pturisticos1;
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    int populacao2;
+    float area2, pib2;
+    int pturisticos2;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    printf("Digite a população do RJ: \n");
+    scanf("%d", &populacao1);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Digite a area de RJ: \n");
+    scanf("%f", &area1);
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o pib de RJ: \n");
+    scanf("%f", pib1);
+    
+    printf("Digite os pontos turisticos de RJ: \n");
+    scanf("%d", &populacao1);
 
+    printf("A população do RJ é de: %d - Area de: %f \n", populacao1, area1);
+    printf("Os pontos turísticos: %f - Com pib de: %f \n", pturisticos1, pib1);
+    
+
+            printf("Digite a população de SP: \n");
+            scanf("%d", &populacao2);
+    
+            printf("Digite a areade SP: \n");
+            scanf("%f", &area2);
+        
+            printf("Digite o pib de SP: \n");
+            scanf("%f", pib2);    
+        
+            printf("Digite os pontos turisticos de SP: \n");
+            scanf("%f", &pturisticos2);
+
+                printf("A população do SP é de: %d - Area de: %f \n", populacao2, area2);
+                printf("Os pontos turísticos de SP: %f - Com pib de: %f \n", pturisticos2, pib2);
+         
     return 0;
+
 }
