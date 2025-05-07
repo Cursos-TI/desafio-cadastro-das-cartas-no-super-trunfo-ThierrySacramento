@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main (){
+
+//declaração das variáveis.
     int populacao1;
     float area1, pib1, densidade1, pibpcap1;
     int pturisticos1;
@@ -14,7 +16,7 @@ int main (){
     
     densidade1 = (populacao2 / area2);
     pibpcap1 = (pib2 / populacao2);
-
+//entrada de dados
     printf("Digite a população do RJ: \n");
     scanf("%d", &populacao1);
     
@@ -54,7 +56,7 @@ int main (){
             printf("O pib de SP é de: %.2f\n", pib2);
             printf("A densidade poopulacional de SP é de: %2.f\n", &densidade2);
             printf("O PIB per capita é de SP: %.2f\n", &pibpcap2);
-    
+    //aplicaçã do super poder, consegui aplicar a estrutura if, if-else, embora nao seja pedido no trabalho, achei interesante assim.
     superPoder1 = populacao1 + area1 + pib1 + pturisticos1 + densidade1;  
     superPoder2 = populacao2 + area2 + pib2 + pturisticos2 + densidade2;
          
