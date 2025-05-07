@@ -3,12 +3,17 @@ int main (){
     int populacao1;
     float area1, pib1, densidade1, pibpcap1;
     int pturisticos1;
-    
+    float superPoder1, superPoder2;
+
+    densidade1 = (populacao1 / area1);
+    pibpcap1 = (pib1 / populacao1);
+
     int populacao2;
-    float area2, pib2, densidade2;
-    float pibpcapita2;
+    float area2, pib2, densidade2, pibpcap2;
     int pturisticos2;
     
+    densidade1 = (populacao2 / area2);
+    pibpcap1 = (pib2 / populacao2);
 
     printf("Digite a população do RJ: \n");
     scanf("%d", &populacao1);
@@ -20,18 +25,16 @@ int main (){
     scanf("%f", &pib1);
     
     printf("Digite os pontos turisticos de RJ: \n");
-    scanf("%d", &pturisticos1);
+    scanf("%f", &pturisticos1);
 
     printf("A população do RJ é de: %d\n", populacao1);      
     printf("A área do RJ é de: %.2f\n", area1);
     printf("Os pontos turísticos: %.2d\n", pturisticos1);
     printf("O pib do RJ é de: %.2f\n", pib1);
-        densidade1 = (populacao1 / area1);
+    densidade1 = (populacao1 / area1);
     printf("A densidade poopulacional do RJ é de: %2.f\n", &densidade1);
-        pibpcap1 = (pib1 / populacao1);
+    pibpcap1 = (pib1 / populacao1);
     printf("O PIB per capita é do RJ: %.2f\n", &pibpcap1);
-
-    
 
             printf("Digite a população de SP: \n");
             scanf("%d", &populacao2);
@@ -49,13 +52,18 @@ int main (){
             printf("A área do SP é de: %.2f\n", area2);
             printf("Os pontos turísticos de SP são: %.2d\n", pturisticos2);
             printf("O pib de SP é de: %.2f\n", pib2);
-                densidade2 = (populacao2 / area2);
             printf("A densidade poopulacional de SP é de: %2.f\n", &densidade2);
-                pibpcapita2 = (float)(pib2 / populacao2);
-            printf("O PIB per capita é de SP: %.2d\n", pibpcapita2);
-           
+            printf("O PIB per capita é de SP: %.2f\n", &pibpcap2);
     
-    
+    superPoder1 = populacao1 + area1 + pib1 + pturisticos1 + densidade1;  
+    superPoder2 = populacao2 + area2 + pib2 + pturisticos2 + densidade2;
+         
+    if (superPoder1 > superPoder2) {
+        printf("Rj venceu");
+      } else {
+        printf("SP venceu");
+      }
+       
+            
     return 0;
-
 }
